@@ -6,7 +6,7 @@ import Search from './search';
 export default function Header() {
   return (
     <div
-      className=' flex  flex-row items-center justify-between bg-emerald-300 px-2 pb-8 pt-4 dark:bg-zinc-900
+      className=' flex  flex-row items-start justify-between bg-emerald-300 pb-8 pt-0 dark:bg-zinc-900
     '
     >
       <div>

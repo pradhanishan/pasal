@@ -1,11 +1,27 @@
 'use client';
 
-import { MdMenu } from 'react-icons/md';
+import { useState } from 'react';
+import DrawerBody from './drawer-body';
+import DrawerOpener from './drawer-opener';
 
 export default function Drawer() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
+
+  function openDrawer() {
+    setIsDrawerOpen(true);
+  }
+
+  function closeDrawer() {
+    setIsDrawerOpen(false);
+  }
+
   return (
-    <div className='text-emerald-900 transition-all duration-300 hover:brightness-110 dark:text-zinc-400'>
-      <MdMenu size={32} />
+    <div className='relative text-emerald-900 transition-all duration-300  dark:text-zinc-400'>
+      {isDrawerOpen ? (
+        <DrawerBody handleCloseDrawer={closeDrawer} />
+      ) : (
+        <DrawerOpener openDrawerHandler={openDrawer} />
+      )}
     </div>
   );
 }
