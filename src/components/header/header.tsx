@@ -1,7 +1,7 @@
 import Drawer from '../drawer/drawer';
 import Heading from './heading';
 import Navbar from './navbar';
-import Search from '../search';
+import Search from './search';
 
 export default function Header() {
   return (

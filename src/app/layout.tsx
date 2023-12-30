@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
-import {  Roboto } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import { Providers } from './providers';
 import './globals.css';
 import Header from '@/components/header/header';
-
 
 const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 export const metadata: Metadata = {
@@ -18,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={roboto.className}>
+      <body className={`${roboto.className}`}>
         <Providers>
           <Header />
           {children}
