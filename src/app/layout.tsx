@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import {  Roboto } from 'next/font/google';
 import { Providers } from './providers';
 import './globals.css';
-import Header from '@/components/header';
+import Header from '@/components/header/header';
 
 
 const roboto = Roboto({ weight: '400', subsets: ['latin'] });

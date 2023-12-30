@@ -1,7 +1,7 @@
-import Drawer from './drawer';
+import Drawer from '../drawer/drawer';
 import Heading from './heading';
 import Navbar from './navbar';
-import Search from './search';
+import Search from '../search';
 
 export default function Header() {
   return (
@@ -14,7 +14,7 @@ export default function Header() {
       </div>
       <div
         className='flex flex-col items-center justify-center space-y-10 
-      md:flex-row md:items-center md:justify-between md:space-x-8 md:space-y-0'
+      pt-8 md:flex-row md:items-center md:justify-between md:space-x-8 md:space-y-0'
       >
         <Heading />
         {/* container for search and navbar */}
