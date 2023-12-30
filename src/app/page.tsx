@@ -1,5 +1,10 @@
-import Image from "next/image";
+import ToggleThemeButton from "@/components/toggle-theme-button";
 
 export default function Home() {
-  return <div>Hello world</div>;
+  return (
+    <div>
+      <ToggleThemeButton />
+      Hello world
+    </div>
+  );
 }
