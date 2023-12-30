@@ -9,7 +9,7 @@ export default function Navbar() {
   ]);
 
   return (
-    <div className='hidden md:flex md:items-center md:justify-center md:space-x-8 md:py-2 lg:space-x-24'>
+    <div className='hidden md:flex md:items-center md:justify-center md:space-x-8 md:py-2 lg:space-x-12'>
       {Array.from(navItems).map(([id, value]) => (
         <NavItem key={id} href={value.href} name={value.name} />
       ))}
